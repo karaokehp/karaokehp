@@ -4,9 +4,11 @@
   "description": "アジアンリゾート風レンタルカラオケスペース",
   "main": "index.html",
   "scripts": {
-    "dev": "npx http-server -p 8081"
+    "dev": "npx http-server public -p 8081",
+    "deploy": "npx wrangler deploy"
   },
   "keywords": [],
   "author": "",
   "license": "ISC"
 }
+
