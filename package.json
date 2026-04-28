@@ -1,0 +1,12 @@
+{
+  "name": "karaoke-asian-resort",
+  "version": "1.0.0",
+  "description": "アジアンリゾート風レンタルカラオケスペース",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server -p 8081"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
