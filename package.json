@@ -1,7 +1,7 @@
 {
-  "name": "karaoke-asian-resort",
+  "name": "karaoke-naias-kogama",
   "version": "1.0.0",
-  "description": "アジアンリゾート風レンタルカラオケスペース",
+  "description": "カラオケ・米糠風呂 ナイアス（神様の道具 コガマ）公式ホームページ",
   "main": "index.html",
   "scripts": {
     "dev": "npx http-server public -p 8081",

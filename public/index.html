@@ -3,150 +3,1025 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="都会の喧騒を忘れる、大人の隠れ家リゾート。カラオケと酵素ぬか風呂を備えた、1日1組限定の完全プライベートスペース。">
-    <title>Karaoke & Spa 月影 -TSUKIKAGE- | ぬか風呂併設プライベート空間</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="北海道勇払郡厚真町にある完全予約制のカラオケ・米糠風呂「ナイアス（神様の道具 コガマ）」。最新LIVE DAM WAO!、Nintendo Switch、大型TV、快適ソファー完備。夜は1組限定の完全貸切プライベート空間。WEB・電話にて前日20時まで予約受付中。">
+    <meta name="keywords" content="カラオケ, 米糠風呂, 酵素風呂, ナイアス, 神様の道具コガマ, 厚真町, 上厚真, 個室カラオケ, 貸切カラオケ, 北海道">
+    <title>カラオケ・米糠風呂 ナイアス【公式】| 北海道厚真町の完全プライベート空間（神様の道具 コガマ）</title>
+    
+    <!-- Open Graph / OGP -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="カラオケ・米糠風呂 ナイアス【公式】| 北海道厚真町（神様の道具 コガマ）">
+    <meta property="og:description" content="歌って、温まって、心も体もととのう。最新カラオケ『LIVE DAM WAO!』× Nintendo Switch × 檜香る米糠酵素風呂。北海道厚真町上厚真の完全プライベート空間。">
+    <meta property="og:image" content="./assets/shop_profile.jpg">
+    <meta property="og:url" content="https://karaoke-asian-resort.pages.dev/">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Outfit:wght@400;600;700;800&family=Shippori+Mincho:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/logo_icon.png">
+    <link rel="apple-touch-icon" href="./assets/logo_icon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- JSON-LD 構造化データ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "カラオケ・米糠風呂 ナイアス（神様の道具 コガマ）",
+      "image": "./assets/shop_profile.jpg",
+      "telephone": "080-1877-3138",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "上厚真101",
+        "addressLocality": "勇払郡厚真町",
+        "addressRegion": "北海道",
+        "postalCode": "059-1741",
+        "addressCountry": "JP"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 42.5926,
+        "longitude": 141.8797
+      },
+      "url": "https://tol-app.jp/s/kogama",
+      "priceRange": "¥400〜¥1,500",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "09:00",
+          "closes": "22:00"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
+
     <!-- ヘッダー -->
-    <header id="main-header">
-        <a href="#" class="logo">TSUKIKAGE</a>
-        <nav>
-            <ul>
-                <li><a href="#concept">CONCEPT</a></li>
-                <li><a href="#system">SYSTEM</a></li>
-                <li><a href="#room">ROOM</a></li>
-                <li><a href="#nuka-bath">NUKA BATH</a></li>
-                <li><a href="#reserve">RESERVE</a></li>
-            </ul>
-        </nav>
+    <header id="main-header" class="header">
+        <div class="header-inner container">
+            <a href="#" class="brand-logo" aria-label="ナイアス トップへ">
+                <img src="./assets/logo_icon.png" alt="ナイアス ロゴ" class="brand-icon">
+                <div class="brand-text">
+                    <span class="brand-sub">カラオケ ♨️ 米糠風呂</span>
+                    <span class="brand-main">ナイアス <span class="brand-desc">神様の道具 コガマ</span></span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">当店について</a></li>
+                    <li><a href="#pricing" class="nav-link">料金システム</a></li>
+                    <li><a href="#calculator" class="nav-link">料金計算</a></li>
+                    <li><a href="#features" class="nav-link">お部屋・設備</a></li>
+                    <li><a href="#enzyme-bath" class="nav-link">米糠酵素風呂</a></li>
+                    <li><a href="#flow" class="nav-link">ご利用の流れ</a></li>
+                    <li><a href="#access" class="nav-link">店舗情報・アクセス</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tel:08018773138" class="btn-header-tel" aria-label="電話をかける">
+                    <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span class="tel-number">080-1877-3138</span>
+                </a>
+                <a href="https://tol-app.jp/s/kogama" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-header-reserve">
+                    <span>WEB予約</span>
+                    <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                </a>
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="メニューを開く" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
     </header>
 
     <!-- ヒーローセクション -->
-    <section class="hero" id="hero">
-        <div class="hero-bg-overlay"></div>
-        <div class="hero-content">
-            <p class="hero-subtitle">極上の癒やしと、贅沢な響き</p>
-            <h1 class="hero-title">Private Resort<br>Karaoke & Spa<br>月影</h1>
-            <p style="font-size: 1.2rem; letter-spacing: 2px; margin-bottom: 30px; color: var(--accent-color);">
-                〜 カラオケ × 酵素ぬか風呂 の極上プライベート空間 〜
-            </p>
-            <a href="#reserve" class="hero-btn" id="hero-reserve-btn">ご予約・お問い合わせ</a>
+    <section class="hero-section" id="hero">
+        <div class="hero-bg">
+            <img src="./assets/shop_profile.jpg" alt="ナイアス 看板 店舗外観" class="hero-bg-img">
+            <div class="hero-overlay"></div>
         </div>
-    </section>
-
-    <!-- コンセプト -->
-    <section id="concept" class="concept">
-        <div class="concept-text" style="text-align: center; max-width: 800px; margin: 0 auto;">
-            <h2 class="section-title">CONCEPT</h2>
-            <p>扉を開ければ、そこは日常を忘れさせる贅沢な隠れ家。</p>
-            <p>「月影（ツキカゲ）」は、都会の喧騒を離れ、心からリラックスするための**完全貸切プライベートスペース**です。</p>
-            <p>最高峰の音響を備えたカラオケルームと、心身を芯から温める「酵素ぬか風呂」が融合。東洋の癒やしのエッセンスをほんのり散りばめた上質な空間で、これまでにない安らぎをご提供いたします。</p>
-        </div>
-    </section>
-
-    <!-- システム -->
-    <section id="system">
-        <h2 class="section-title">SYSTEM</h2>
-        <div class="system-container">
-            <div class="system-card">
-                <div class="system-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                </div>
-                <h3>1時間単位の料金制</h3>
-                <p>ご利用時間に合わせて柔軟に滞在いただける、シンプルな1時間単位の料金システムを採用しております。</p>
-                <p style="color: var(--accent-color); margin-top: 15px; font-weight: bold;">※現在、オープンに向けて料金プランを調整中です。決定次第、本ページにて公開いたします。</p>
+        <div class="container hero-container">
+            <div class="hero-badges">
+                <span class="badge badge-glow">✨ 完全予約制プライベート空間</span>
+                <span class="badge badge-sub">北海道勇払郡厚真町</span>
+                <span class="badge badge-gold">🌙 夜は1組限定貸切</span>
             </div>
-        </div>
-    </section>
-
-    <!-- お部屋紹介 -->
-    <section id="room">
-        <h2 class="section-title">THE ROOM</h2>
-        <div class="room-container">
-            <div class="room-detail">
-                <div class="room-badge">完全貸切 / 1室限定</div>
-                <h3>Premium Private Suite</h3>
-                <p>上質なインテリアと落ち着いた照明に包まれた、1室限定の贅沢な空間です。</p>
-                <p>ゆったりと寛げるソファ、洗練された音響設備を完備。周りの目を気にすることなく、プライベートな時間をご堪能いただけます。</p>
-                
-                <div class="room-features">
-                    <div class="feature-item">❖ 最新カラオケ機種</div>
-                    <div class="feature-item">❖ 高音質スピーカー</div>
-                    <div class="feature-item">❖ 大画面モニター</div>
-                    <div class="feature-item">❖ 飲食持ち込み自由</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ぬか風呂 -->
-    <section id="nuka-bath" class="nuka-bath">
-        <div class="nuka-content">
-            <h2 class="section-title">ENZYME NUKA BATH</h2>
-            <div class="nuka-badge">至福のデトックス</div>
-            <h3>本格 酵素ぬか風呂</h3>
-            <p>カラオケスペースの奥に佇む、隠れ家のような「ぬか風呂」エリア。</p>
-            <p>米ぬかの発酵熱だけで温める天然の温熱療法です。微生物の力で温まったふわふわの米ぬかに包まれる体験は、極上のリラクゼーションをもたらします。</p>
-            <p>カラオケで声を出し、ぬか風呂で汗を流す。究極のデトックスをお楽しみください。</p>
             
-            <div class="nuka-benefits">
-                <h4>ぬか風呂の効能</h4>
-                <ul>
-                    <li>美肌効果・保湿作用</li>
-                    <li>冷え性の改善・温活</li>
-                    <li>疲労回復・免疫力向上</li>
-                    <li>デトックス（大量発汗）</li>
-                </ul>
+            <h1 class="hero-title">
+                歌って、温まって、<br>
+                心も身体もととのう特別な場所。
+            </h1>
+
+            <p class="hero-lead">
+                最新カラオケ<strong>「LIVE DAM WAO!」</strong>＆大人気<strong>「Nintendo Switch」</strong>完備！<br>
+                極上の<strong>「米糠酵素風呂」</strong>も併設した、厚真町上厚真のアットホームな隠れ家スペース。
+            </p>
+
+            <div class="hero-points">
+                <div class="point-pill">
+                    <span class="point-icon">🎤</span>
+                    <span>最新 DAM カラオケ</span>
+                </div>
+                <div class="point-pill">
+                    <span class="point-icon">🎮</span>
+                    <span>Nintendo Switch</span>
+                </div>
+                <div class="point-pill">
+                    <span class="point-icon">♨️</span>
+                    <span>米糠酵素風呂</span>
+                </div>
+                <div class="point-pill">
+                    <span class="point-icon">🍱</span>
+                    <span>飲食持ち込みOK</span>
+                </div>
+                <div class="point-pill">
+                    <span class="point-icon">❄️</span>
+                    <span>冷暖房・空気清浄完備</span>
+                </div>
+            </div>
+
+            <div class="hero-cta-group">
+                <a href="https://tol-app.jp/s/kogama" target="_blank" rel="noopener noreferrer" class="btn btn-hero-reserve">
+                    <span class="btn-text">
+                        <strong>WEBで即時予約する</strong>
+                        <small>freee予約（tol）24時間受付中</small>
+                    </span>
+                    <svg class="icon-svg arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                <a href="tel:08018773138" class="btn btn-hero-tel">
+                    <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span>お電話で予約・貸切相談<br><small>080-1877-3138</small></span>
+                </a>
+            </div>
+
+            <p class="hero-notice">※完全予約制（前日20:00まで受付）。ローソン上厚真店裏すぐ！</p>
+        </div>
+    </section>
+
+    <!-- 公式インスタグラム バナー案内 -->
+    <section class="insta-strip">
+        <div class="container insta-strip-inner">
+            <div class="insta-info">
+                <img src="./assets/logo_icon.png" alt="Instagram Icon" class="insta-avatar">
+                <div>
+                    <span class="insta-label">Instagram公式アカウント</span>
+                    <strong class="insta-handle">@kamisamanodogu.kogama</strong>
+                </div>
+            </div>
+            <p class="insta-text">最新の空き状況やお店の様子をインスタグラムで随時配信中！</p>
+            <a href="https://www.instagram.com/kamisamanodogu.kogama/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm">
+                <span>Instagramを見る</span>
+                <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- 当店について (About) -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">ABOUT US</span>
+                <h2 class="section-title">落ち着いた空間と温もりあふれる<br>厚真町のプライベートカラオケ＆温浴サロン</h2>
+                <div class="title-divider"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image-card">
+                    <img src="./assets/room_interior.jpg" alt="ナイアス カラオケルーム内観" class="about-img-main">
+                    <div class="about-image-overlay">
+                        <span class="badge badge-accent">ゆったり寛げるソファー個室</span>
+                        <p class="caption">最新設備が整った清潔感あふれるプライベート空間</p>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <h3 class="about-subheading">「神様の道具 コガマ」が贈る、<br>日常を忘れて心ほどけるひととき。</h3>
+                    <p class="about-desc">
+                        当店は北海道勇払郡厚真町上厚真、ローソン裏手に佇むプライベート空間です。落ち着いたインテリアとアットホームな雰囲気が特徴で、仲間同士やご家族連れ、お一人様でもリラックスして楽しめる空間をご提供しております。
+                    </p>
+                    <p class="about-desc">
+                        最新鋭のカラオケ機器<strong>「LIVE DAM WAO!」</strong>をはじめ、みんなで盛り上がれる<strong>「Nintendo Switch」</strong>、大型テレビモニター、冷暖房エアコン、空気清浄機を完備。
+                    </p>
+                    <p class="about-desc">
+                        さらに奥には、自然の発酵熱で体を芯から温めてデトックスできる極上の<strong>「米糠酵素風呂」</strong>も併設。歌って発散し、お風呂で癒やされる、これまでにない特別な癒やしをご体験いただけます。
+                    </p>
+
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-num">01</div>
+                            <div class="highlight-text">
+                                <strong>完全予約制のプライベート空間</strong>
+                                <span>他のお客様と重ならず、自分たちだけの贅沢な時間を安心してお過ごしいただけます。</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-num">02</div>
+                            <div class="highlight-text">
+                                <strong>夜は1組限定の贅沢貸切</strong>
+                                <span>18:00〜22:00の夜の部は1日1組限定。周囲を気にせず思いっきり歌ってくつろげます。</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-num">03</div>
+                            <div class="highlight-text">
+                                <strong>飲食持ち込み自由＆駐車場完備</strong>
+                                <span>好きな食べ物やお酒、ジュースを持ち込んでパーティー可能。お車でも安心してお越しいただけます。</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- 予約・お問い合わせ -->
-    <section id="reserve">
-        <h2 class="section-title">RESERVATION & CONTACT</h2>
-        <div class="reservation">
-            <p style="text-align: center; margin-bottom: 30px; color: var(--accent-color);">
-                プレオープン等の最新情報や、料金決定のお知らせをご希望の方は、下記よりお問い合わせください。
+    <!-- 料金システム (Pricing) -->
+    <section class="section pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">SYSTEM & PRICE</span>
+                <h2 class="section-title">明朗・安心の料金システム</h2>
+                <p class="section-lead">昼はリーズナブルに、夜は1組限定のプレミアム貸切空間をお得にご利用いただけます。</p>
+                <div class="title-divider"></div>
+            </div>
+
+            <div class="pricing-cards-container">
+                <!-- 昼の部カード -->
+                <div class="pricing-card day-card">
+                    <div class="pricing-card-header">
+                        <div class="time-badge day-badge">昼の部 9:00 〜 18:00</div>
+                        <h3 class="pricing-plan-title">デイタイム利用</h3>
+                        <p class="pricing-plan-subtitle">お昼のカラオケ、練習、ママ会、家族団らんに！</p>
+                    </div>
+                    <div class="pricing-rates">
+                        <div class="rate-row highlight-rate">
+                            <div class="rate-label">
+                                <span class="rate-capacity">2名様まで</span>
+                                <span class="rate-note">1時間一律（1室料金）</span>
+                            </div>
+                            <div class="rate-price">
+                                <span class="price-num">1,000</span>
+                                <span class="price-unit">円 / 室 / 1h</span>
+                            </div>
+                        </div>
+                        <div class="rate-divider"></div>
+                        <div class="rate-row">
+                            <div class="rate-label">
+                                <span class="rate-capacity">3名様以上</span>
+                                <span class="rate-note">1名様あたりの料金</span>
+                            </div>
+                            <div class="rate-price">
+                                <span class="price-num">400</span>
+                                <span class="price-unit">円 / 人 / 1h</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ 1時間単位でご予約可能</li>
+                        <li>✓ Nintendo Switch利用無料</li>
+                        <li>✓ 飲食物持ち込みOK</li>
+                    </ul>
+                    <a href="https://tol-app.jp/s/kogama" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+                        昼の部をWEB予約する
+                    </a>
+                </div>
+
+                <!-- 夜の部カード -->
+                <div class="pricing-card night-card featured">
+                    <div class="featured-ribbon">1組限定貸切</div>
+                    <div class="pricing-card-header">
+                        <div class="time-badge night-badge">夜の部 18:00 〜 22:00</div>
+                        <h3 class="pricing-plan-title">ナイトタイム貸切</h3>
+                        <p class="pricing-plan-subtitle">1組様限定！誰にも邪魔されない極上のプライベート時間</p>
+                    </div>
+                    <div class="pricing-rates">
+                        <div class="rate-row highlight-rate">
+                            <div class="rate-label">
+                                <span class="rate-capacity">2名様まで</span>
+                                <span class="rate-note">1時間一律（1室貸切料金）</span>
+                            </div>
+                            <div class="rate-price">
+                                <span class="price-num">1,500</span>
+                                <span class="price-unit">円 / 室 / 1h</span>
+                            </div>
+                        </div>
+                        <div class="rate-divider"></div>
+                        <div class="rate-row">
+                            <div class="rate-label">
+                                <span class="rate-capacity">3名様以上</span>
+                                <span class="rate-note">1名様あたりの料金</span>
+                            </div>
+                            <div class="rate-price">
+                                <span class="price-num">500</span>
+                                <span class="price-unit">円 / 人 / 1h</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ 夜間は完全1組貸切スペース</li>
+                        <li>✓ お酒や夜食の持ち込み自由</li>
+                        <li>✓ 贅沢な音響で歌い放題</li>
+                    </ul>
+                    <a href="https://tol-app.jp/s/kogama" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-block">
+                        夜の部をWEB予約する
+                    </a>
+                </div>
+            </div>
+
+            <!-- 特別割引インフォメーション -->
+            <div class="discounts-banner">
+                <div class="discount-header">
+                    <span class="discount-icon">🎁</span>
+                    <h4>うれしい特別割引システム</h4>
+                </div>
+                <div class="discount-items">
+                    <div class="discount-box">
+                        <span class="discount-tag">未就学児</span>
+                        <strong class="discount-value">室料 無料</strong>
+                        <p class="discount-desc">小さなお子様連れのご家族も安心！室料はかかりません。</p>
+                    </div>
+                    <div class="discount-box">
+                        <span class="discount-tag">小学生</span>
+                        <strong class="discount-value">一般料金の 半額</strong>
+                        <p class="discount-desc">※10才以下のお子様は保護者同伴必須。学校指定の門限までとなります。</p>
+                    </div>
+                    <div class="discount-box">
+                        <span class="discount-tag">シニア（65歳以上）</span>
+                        <strong class="discount-value">1時間 100円引き</strong>
+                        <p class="discount-desc">昼・夜問わず、全時間帯で通常料金から100円引きとなります。</p>
+                    </div>
+                </div>
+                <div class="pricing-notes">
+                    <p>※料金はすべて税込表記です。</p>
+                    <p>※予約・キャンセルは<strong>前日20:00まで</strong>となります（20:00以降の予約は受け付けておりません）。</p>
+                    <p>※貸し切りや特別なご利用については、お電話（<a href="tel:08018773138">080-1877-3138</a>）にてお気軽にご相談ください。</p>
+                </div>
+
+                <!-- 公式料金表ポスター閲覧ボタン -->
+                <div class="poster-modal-trigger text-center">
+                    <button type="button" class="btn btn-outline-primary" id="open-poster-modal">
+                        <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M20.4 14.5L16 10 4 20"/></svg>
+                        <span>店内に掲示中の【公式料金ポスター】を見る</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 料金シミュレーター (Price Calculator) -->
+    <section class="section calculator-section" id="calculator">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">SIMULATION</span>
+                <h2 class="section-title">リアルタイム料金シミュレーター</h2>
+                <p class="section-lead">時間帯・ご利用時間・人数を選ぶだけで、お会計の目安を瞬時に計算できます。</p>
+                <div class="title-divider"></div>
+            </div>
+
+            <div class="calc-wrapper">
+                <div class="calc-form">
+                    <!-- 時間帯選択 -->
+                    <div class="calc-group">
+                        <label class="calc-label">1. ご利用時間帯</label>
+                        <div class="time-radio-group">
+                            <label class="time-radio-label active" id="radio-day-label">
+                                <input type="radio" name="calc-timeframe" value="day" checked id="calc-time-day">
+                                <span class="radio-custom"></span>
+                                <div class="radio-content">
+                                    <strong>昼の部</strong>
+                                    <small>9:00 〜 18:00</small>
+                                </div>
+                            </label>
+                            <label class="time-radio-label" id="radio-night-label">
+                                <input type="radio" name="calc-timeframe" value="night" id="calc-time-night">
+                                <span class="radio-custom"></span>
+                                <div class="radio-content">
+                                    <strong>夜の部（1組限定貸切）</strong>
+                                    <small>18:00 〜 22:00</small>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- ご利用時間 -->
+                    <div class="calc-group">
+                        <label class="calc-label" for="calc-hours">
+                            2. ご利用時間：<span id="calc-hours-display" class="calc-highlight">2時間</span>
+                        </label>
+                        <div class="hour-slider-container">
+                            <input type="range" id="calc-hours" min="1" max="6" value="2" step="1" class="calc-slider">
+                            <div class="slider-marks">
+                                <span>1h</span>
+                                <span>2h</span>
+                                <span>3h</span>
+                                <span>4h</span>
+                                <span>5h</span>
+                                <span>6h</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 人数設定 -->
+                    <div class="calc-group">
+                        <label class="calc-label">3. ご利用人数</label>
+                        <div class="people-counters">
+                            <!-- 一般大人 -->
+                            <div class="counter-row">
+                                <div class="counter-label">
+                                    <strong>一般大人（中学生以上〜64歳）</strong>
+                                    <small id="adult-rate-hint">昼 400円 / 夜 500円（3名以上時）</small>
+                                </div>
+                                <div class="counter-controls">
+                                    <button type="button" class="btn-counter" data-target="calc-adults" data-action="minus" aria-label="大人の人数を減らす">−</button>
+                                    <input type="number" id="calc-adults" min="1" max="20" value="2" class="counter-input" readonly>
+                                    <button type="button" class="btn-counter" data-target="calc-adults" data-action="plus" aria-label="大人の人数を増やす">＋</button>
+                                </div>
+                            </div>
+
+                            <!-- シニア -->
+                            <div class="counter-row">
+                                <div class="counter-label">
+                                    <strong>シニア（65歳以上）</strong>
+                                    <small>1時間あたり100円引き</small>
+                                </div>
+                                <div class="counter-controls">
+                                    <button type="button" class="btn-counter" data-target="calc-seniors" data-action="minus" aria-label="シニアの人数を減らす">−</button>
+                                    <input type="number" id="calc-seniors" min="0" max="20" value="0" class="counter-input" readonly>
+                                    <button type="button" class="btn-counter" data-target="calc-seniors" data-action="plus" aria-label="シニアの人数を増やす">＋</button>
+                                </div>
+                            </div>
+
+                            <!-- 小学生 -->
+                            <div class="counter-row">
+                                <div class="counter-label">
+                                    <strong>小学生</strong>
+                                    <small>一般料金の半額（10歳以下は保護者同伴）</small>
+                                </div>
+                                <div class="counter-controls">
+                                    <button type="button" class="btn-counter" data-target="calc-kids" data-action="minus" aria-label="小学生の人数を減らす">−</button>
+                                    <input type="number" id="calc-kids" min="0" max="20" value="0" class="counter-input" readonly>
+                                    <button type="button" class="btn-counter" data-target="calc-kids" data-action="plus" aria-label="小学生の人数を増やす">＋</button>
+                                </div>
+                            </div>
+
+                            <!-- 未就学児 -->
+                            <div class="counter-row">
+                                <div class="counter-label">
+                                    <strong>未就学児</strong>
+                                    <small>室料無料</small>
+                                </div>
+                                <div class="counter-controls">
+                                    <button type="button" class="btn-counter" data-target="calc-infants" data-action="minus" aria-label="未就学児の人数を減らす">−</button>
+                                    <input type="number" id="calc-infants" min="0" max="20" value="0" class="counter-input" readonly>
+                                    <button type="button" class="btn-counter" data-target="calc-infants" data-action="plus" aria-label="未就学児の人数を増やす">＋</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 計算結果ディスプレイ -->
+                <div class="calc-result-box">
+                    <div class="result-box-header">
+                        <span class="badge badge-accent">お見積り結果</span>
+                        <h3 class="result-title">概算ご利用料金</h3>
+                    </div>
+
+                    <div class="result-main-price">
+                        <span class="result-currency">¥</span>
+                        <span class="result-total" id="result-total-price">2,000</span>
+                        <span class="result-tax">(税込)</span>
+                    </div>
+
+                    <div class="result-per-person" id="result-per-person-wrap">
+                        おひとり様あたり約 <strong id="result-per-person">1,000</strong> 円
+                    </div>
+
+                    <div class="result-breakdown">
+                        <div class="breakdown-item">
+                            <span>時間帯</span>
+                            <span id="bd-timeframe">昼の部（9:00〜18:00）</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span>ご利用時間</span>
+                            <span id="bd-hours">2 時間</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span>合計人数</span>
+                            <span id="bd-people">2 名様（大人2）</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span>適用ルール</span>
+                            <span id="bd-rule">2名様までの一室料金適用</span>
+                        </div>
+                    </div>
+
+                    <div class="result-actions">
+                        <a href="https://tol-app.jp/s/kogama" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block btn-lg" id="btn-calc-reserve">
+                            この内容でWEB予約する
+                        </a>
+                        <a href="tel:08018773138" class="btn btn-outline-light btn-block">
+                            お電話で相談する
+                        </a>
+                    </div>
+                    <small class="result-footnote">※実際の空き状況・ご予約はWEB予約画面またはお電話にてご確認ください。</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お部屋・設備 (Features & Rooms) -->
+    <section class="section features-section" id="features">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">FACILITIES & ROOM</span>
+                <h2 class="section-title">充実の設備＆居心地抜群の空間</h2>
+                <p class="section-lead">最高の歌い心地とくつろぎをお届けするため、音響や空間設備にこだわっています。</p>
+                <div class="title-divider"></div>
+            </div>
+
+            <div class="features-gallery-grid">
+                <!-- 設備1: 最新LIVE DAM WAO! -->
+                <div class="feature-card">
+                    <div class="feature-img-wrap">
+                        <img src="./assets/room1.jpg" alt="最新カラオケ機器 LIVE DAM WAO!" class="feature-img">
+                        <span class="feature-tag">音響設備</span>
+                    </div>
+                    <div class="feature-body">
+                        <h3 class="feature-title">最新カラオケ「LIVE DAM WAO!」</h3>
+                        <p class="feature-desc">
+                            業界最高峰のサウンドクオリティと本人映像・精密採点を搭載した最新カラオケ機種「LIVE DAM WAO!」を導入！クリアで迫力ある音響で、歌う楽しさが倍増します。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 設備2: SmartDAM & マイク -->
+                <div class="feature-card">
+                    <div class="feature-img-wrap">
+                        <img src="./assets/room2.jpg" alt="SmartDAM タブレット & 高性能ワイヤレスマイク" class="feature-img">
+                        <span class="feature-tag">選曲リモコン</span>
+                    </div>
+                    <div class="feature-body">
+                        <h3 class="feature-title">SmartDAM タブレット＆マイク完備</h3>
+                        <p class="feature-desc">
+                            直感的な大画面タッチパネル「SmartDAM」でサクサク選曲！高感度なワイヤレスマイクも完備しており、デュエットやグループでの合唱もストレスフリーです。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 設備3: 広々ソファー個室 -->
+                <div class="feature-card">
+                    <div class="feature-img-wrap">
+                        <img src="./assets/room_interior.jpg" alt="ゆったり寛げるソファーと大画面TV" class="feature-img">
+                        <span class="feature-tag">プライベート個室</span>
+                    </div>
+                    <div class="feature-body">
+                        <h3 class="feature-title">ゆったりソファー＆大画面TV</h3>
+                        <p class="feature-desc">
+                            足を伸ばしてくつろげる大型ソファーとテーブル、大画面壁掛けモニターを配置。落ち着いた照明で、まるでおうちのリビングのようにリラックスできます。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 設備4: Nintendo Switch -->
+                <div class="feature-card">
+                    <div class="feature-img-wrap">
+                        <img src="./assets/nintendo_switch.jpg" alt="Nintendo Switch 完備" class="feature-img">
+                        <span class="feature-tag">ゲーム・エンタメ</span>
+                    </div>
+                    <div class="feature-body">
+                        <h3 class="feature-title">Nintendo Switch 完備！</h3>
+                        <p class="feature-desc">
+                            歌うだけでなくゲームも楽しめる！追加料金なしで「Nintendo Switch」をご利用いただけます。お友達同士の対戦やお子様連れのご家族に大好評です。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 設備5: エアコン・空気清浄機 -->
+                <div class="feature-card">
+                    <div class="feature-img-wrap">
+                        <img src="./assets/air_conditioner.jpg" alt="最新エアコン・空気清浄機完備" class="feature-img">
+                        <span class="feature-tag">快適空調</span>
+                    </div>
+                    <div class="feature-body">
+                        <h3 class="feature-title">最新エアコン＆空気清浄機完備</h3>
+                        <p class="feature-desc">
+                            高性能エアコンと空気清浄機を設置し、夏は涼しく冬は暖かく、いつでもクリーンな空気環境を保っています。長時間の滞在も快適そのものです。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 設備6: 飲食持ち込みOK -->
+                <div class="feature-card">
+                    <div class="feature-img-wrap">
+                        <img src="./assets/lawson_notice.jpg" alt="ローソン裏の好立地・飲食持ち込みOK" class="feature-img">
+                        <span class="feature-tag">便利な立地</span>
+                    </div>
+                    <div class="feature-body">
+                        <h3 class="feature-title">飲食持ち込みOK＆ローソン裏！</h3>
+                        <p class="feature-desc">
+                            飲食物のお持ち込みは完全自由！お店のすぐ目の前にはローソン（上厚真店）があるので、お菓子やドリンク、お弁当などを手軽に買い出しできます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 米糠酵素風呂 (Enzyme Bath) -->
+    <section class="section enzyme-section" id="enzyme-bath">
+        <div class="container">
+            <div class="enzyme-card">
+                <div class="enzyme-image-col">
+                    <img src="./assets/rice_bran_bath.jpg" alt="檜香る本格 米糠酵素風呂" class="enzyme-img">
+                    <div class="enzyme-badge">♨️ 至福の温活デトックス</div>
+                </div>
+                <div class="enzyme-text-col">
+                    <span class="section-tag tag-white">WELLNESS SPA</span>
+                    <h2 class="enzyme-title">檜香る本格「米糠酵素風呂」</h2>
+                    <p class="enzyme-lead">
+                        自然の恵みと発酵熱で、身体の芯から温まる極上の天然温浴。
+                    </p>
+                    <p class="enzyme-desc">
+                        ナイアスには、カラオケルームの奥に自慢の「米糠酵素風呂」を併設しています。電気やガスを一切使わず、有用微生物が米ぬかを自然発酵させる熱（約60℃〜65℃）のみで温まる伝統的な温浴法です。
+                    </p>
+                    <p class="enzyme-desc">
+                        檜（ヒノキ）の爽やかな香りとふわふわの米ぬかに包まれる時間は、日常のストレスを忘れさせてくれます。カラオケとあわせたリフレッシュ体験も大好評です。
+                    </p>
+
+                    <div class="enzyme-benefits">
+                        <div class="benefit-chip">✨ 美肌・潤い保湿</div>
+                        <div class="benefit-chip">🔥 深部体温UP・冷え改善</div>
+                        <div class="benefit-chip">💦 大量発汗デトックス</div>
+                        <div class="benefit-chip">🌿 疲労回復・免疫力向上</div>
+                    </div>
+
+                    <div class="enzyme-cta">
+                        <p class="enzyme-note">※米糠風呂のご利用や詳細はお電話またはWEB予約よりお気軽にお問い合わせください。</p>
+                        <a href="tel:08018773138" class="btn btn-light">
+                            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <span>米糠風呂について問い合わせる</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ご利用の流れ (How to Reserve) -->
+    <section class="section flow-section" id="flow">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">GUIDE</span>
+                <h2 class="section-title">ご予約からご利用までの流れ</h2>
+                <p class="section-lead">完全予約制（前日20:00まで受付）となっております。簡単4ステップでご利用いただけます。</p>
+                <div class="title-divider"></div>
+            </div>
+
+            <div class="flow-steps">
+                <div class="step-card">
+                    <div class="step-num">STEP 01</div>
+                    <div class="step-icon">📱</div>
+                    <h3 class="step-title">前日までに予約</h3>
+                    <p class="step-desc">
+                        WEB予約（freee予約/tol）またはお電話（080-1877-3138）にて、<strong>前日20:00まで</strong>にご予約ください。
+                    </p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-num">STEP 02</div>
+                    <div class="step-icon">🚗</div>
+                    <h3 class="step-title">当日、店舗へお越し</h3>
+                    <p class="step-desc">
+                        ご予約日時に厚真町上厚真101の当店へお越しください。ローソン上厚真店裏にございます。駐車場も完備しております。
+                    </p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-num">STEP 03</div>
+                    <div class="step-icon">🎤</div>
+                    <h3 class="step-title">プライベート空間を満喫</h3>
+                    <p class="step-desc">
+                        カラオケ、Nintendo Switch、お持ち込みの飲食など、完全個室で気兼ねなくお楽しみください。
+                    </p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-num">STEP 04</div>
+                    <div class="step-icon">💳</div>
+                    <h3 class="step-title">お会計・ご退室</h3>
+                    <p class="step-desc">
+                        ご利用終了後、現地にて料金をお支払いいただきご退室となります。次回のご利用も心よりお待ちしております！
+                    </p>
+                </div>
+            </div>
+
+            <div class="flow-cta text-center">
+                <a href="https://tol-app.jp/s/kogama" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+                    今すぐWEB予約する（24時間受付）
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 店舗情報・アクセス (Access & Location) -->
+    <section class="section access-section" id="access">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">ACCESS & INFO</span>
+                <h2 class="section-title">店舗情報・アクセス</h2>
+                <div class="title-divider"></div>
+            </div>
+
+            <div class="access-grid">
+                <div class="access-info-card">
+                    <div class="shop-badge">
+                        <img src="./assets/logo_icon.png" alt="ナイアス ロゴ" class="access-logo">
+                        <div>
+                            <h3 class="access-shop-name">カラオケ・米糠風呂 ナイアス</h3>
+                            <span class="access-sub-name">神様の道具 コガマ</span>
+                        </div>
+                    </div>
+
+                    <table class="access-table">
+                        <tbody>
+                            <tr>
+                                <th>所在地</th>
+                                <td>
+                                    〒059-1741<br>
+                                    北海道勇払郡厚真町上厚真101<br>
+                                    <span class="access-landmark">※ローソン上厚真店の裏手すぐ</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>ご予約・電話</th>
+                                <td>
+                                    <a href="tel:08018773138" class="tel-link">080-1877-3138</a><br>
+                                    <small class="table-note">（貸切・お問い合わせもお気軽に）</small>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>営業時間</th>
+                                <td>
+                                    <strong>9:00 〜 22:00</strong><br>
+                                    ・昼の部：9:00 〜 18:00<br>
+                                    ・夜の部：18:00 〜 22:00（1組限定貸切）<br>
+                                    <small class="table-note">※完全予約制（前日20:00まで受付）</small>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>定休日</th>
+                                <td>不定休</td>
+                            </tr>
+                            <tr>
+                                <th>設備</th>
+                                <td>LIVE DAM WAO!、SmartDAM、Nintendo Switch、大型TVモニター、エアコン、空気清浄機、ソファー、米糠酵素風呂</td>
+                            </tr>
+                            <tr>
+                                <th>駐車場</th>
+                                <td>敷地内駐車場あり</td>
+                            </tr>
+                            <tr>
+                                <th>公式SNS</th>
+                                <td>
+                                    <a href="https://www.instagram.com/kamisamanodogu.kogama/" target="_blank" rel="noopener noreferrer" class="insta-link">
+                                        <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                                        <span>@kamisamanodogu.kogama</span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="access-btn-group">
+                        <a href="https://maps.google.co.jp/maps?q=%E5%8C%97%E6%B5%B7%E9%81%93%20%E5%8E%9A%E7%9C%9F%E7%94%BA%20%E4%B8%8A%E5%8E%9A%E7%9C%9F101%20" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-block">
+                            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+                            <span>Google マップでルート案内</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- マップ埋め込み -->
+                <div class="access-map-card">
+                    <iframe 
+                        title="ナイアス 周辺地図"
+                        src="https://maps.google.co.jp/maps?q=%E5%8C%97%E6%B5%B7%E9%81%93%E5%8E%9A%E7%9C%9F%E7%94%BA%E4%B8%8A%E5%8E%9A%E7%9C%9F101&output=embed&z=15" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; min-height: 420px; border-radius: 16px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- よくある質問 (FAQ) -->
+    <section class="section faq-section" id="faq">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">よくあるご質問</h2>
+                <div class="title-divider"></div>
+            </div>
+
+            <div class="faq-accordion-list">
+                <!-- Q1 -->
+                <details class="faq-item" open>
+                    <summary class="faq-question">
+                        <span class="faq-q-badge">Q</span>
+                        <span>飲食やアルコールの持ち込みはできますか？</span>
+                        <span class="faq-toggle-icon"></span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>はい、ご自由にお持ち込みいただけます！お好きなスナックやお弁当、お酒、ソフトドリンクをご持参いただき、プライベートな時間をお楽しみください。お店のすぐ目の前（徒歩数十秒）にローソン上厚真店がございますので、買い出しにも大変便利です。</p>
+                    </div>
+                </details>
+
+                <!-- Q2 -->
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span class="faq-q-badge">Q</span>
+                        <span>Nintendo Switchの利用に追加料金はかかりますか？</span>
+                        <span class="faq-toggle-icon"></span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>いいえ、Nintendo Switchの利用に追加料金は一切かかりません。通常の室料のみで、カラオケとゲームの両方を自由にお楽しみいただけます。</p>
+                    </div>
+                </details>
+
+                <!-- Q3 -->
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span class="faq-q-badge">Q</span>
+                        <span>当日予約は可能ですか？</span>
+                        <span class="faq-toggle-icon"></span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>当店は完全予約制となっており、<strong>前日20:00まで</strong>のご予約受付となっております。20:00以降のご予約は原則受け付けておりませんので、お早めにご予約いただけますようお願いいたします。直前の空き状況についてはお電話（080-1877-3138）にてご相談ください。</p>
+                    </div>
+                </details>
+
+                <!-- Q4 -->
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span class="faq-q-badge">Q</span>
+                        <span>子ども連れでも利用できますか？</span>
+                        <span class="faq-toggle-icon"></span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>大歓迎です！未就学児のお子様は【室料無料】、小学生のお子様は【一般料金の半額】でご利用いただけます。なお、10才以下のお子様は保護者同伴が必須となります。また、小学生のご利用は学校指定の門限までとなります。</p>
+                    </div>
+                </details>
+
+                <!-- Q5 -->
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span class="faq-q-badge">Q</span>
+                        <span>夜の部（18:00〜22:00）の貸切について教えてください。</span>
+                        <span class="faq-toggle-icon"></span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>夜の部は贅沢な「1日1組限定の完全貸切」となっております。他のお客様の目を一切気にせず、完全なプライベート空間を満喫していただけます。ご家族でのお祝いや、ご友人同士でのパーティーに大人気です。</p>
+                    </div>
+                </details>
+
+                <!-- Q6 -->
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span class="faq-q-badge">Q</span>
+                        <span>米糠酵素風呂の予約はどうすればいいですか？</span>
+                        <span class="faq-toggle-icon"></span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>米糠風呂のご予約や詳細、カラオケとのセット利用については、WEB予約のメニュー、またはお電話（080-1877-3138）にて承っております。お気軽にお問い合わせください。</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- 予約CTAセクション -->
+    <section class="section reserve-cta-section" id="reserve">
+        <div class="container text-center">
+            <span class="badge badge-accent">RESERVATION</span>
+            <h2 class="reserve-cta-title">心地よい音楽と極上のぬくもりが待っています</h2>
+            <p class="reserve-cta-desc">
+                前日20:00までの完全予約制。WEBなら24時間いつでも空き状況を確認してご予約いただけます。
             </p>
-            <form id="booking-form">
-                <div class="form-group">
-                    <label for="user-name">お名前</label>
-                    <input type="text" id="user-name" class="form-control" required placeholder="山田 太郎">
-                </div>
-                <div class="form-group">
-                    <label for="user-email">メールアドレス</label>
-                    <input type="email" id="user-email" class="form-control" required placeholder="example@tsukikage.com">
-                </div>
-                <div class="form-group">
-                    <label for="contact-type">お問い合わせ内容</label>
-                    <select id="contact-type" class="form-control" required>
-                        <option value="info">オープン情報の受け取り希望</option>
-                        <option value="reserve">事前予約の相談</option>
-                        <option value="other">その他のお問い合わせ</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="message">メッセージ</label>
-                    <textarea id="message" class="form-control" rows="4" placeholder="ご質問やご要望がございましたらご記入ください。"></textarea>
-                </div>
-                <button type="submit" class="submit-btn" id="submit-btn">送信する</button>
-            </form>
+
+            <div class="reserve-btn-wrap">
+                <a href="https://tol-app.jp/s/kogama" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+                    <span>24時間 WEB予約（freee予約）</span>
+                    <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                </a>
+                <a href="tel:08018773138" class="btn btn-white btn-lg">
+                    <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span>お電話で予約・お問い合わせ</span>
+                </a>
+            </div>
+            <p class="reserve-notice">※貸切のご相談はお電話にてお願いいたします（TEL: 080-1877-3138）</p>
         </div>
     </section>
 
     <!-- フッター -->
-    <footer>
-        <div class="footer-logo">TSUKIKAGE</div>
-        <div class="footer-info">
-            <p>〒059-1741 北海道勇払郡厚真町上厚真101</p>
-            <p>営業時間: 10:00 〜 翌5:00 (完全予約制)</p>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo-row">
+                    <img src="./assets/logo_icon.png" alt="ナイアス ロゴ" class="footer-logo">
+                    <div>
+                        <strong class="footer-brand-name">カラオケ・米糠風呂 ナイアス</strong>
+                        <span class="footer-brand-sub">神様の道具 コガマ</span>
+                    </div>
+                </div>
+                <p class="footer-desc">
+                    北海道勇払郡厚真町上厚真101<br>
+                    TEL: 080-1877-3138<br>
+                    営業時間: 9:00〜22:00（完全予約制）
+                </p>
+                <div class="footer-sns">
+                    <a href="https://www.instagram.com/kamisamanodogu.kogama/" target="_blank" rel="noopener noreferrer" class="footer-insta-btn" aria-label="公式Instagram">
+                        <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        <span>Instagram @kamisamanodogu.kogama</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>CONTENTS</h4>
+                <ul>
+                    <li><a href="#about">当店について</a></li>
+                    <li><a href="#pricing">料金システム</a></li>
+                    <li><a href="#calculator">料金シミュレーター</a></li>
+                    <li><a href="#features">お部屋・設備</a></li>
+                    <li><a href="#enzyme-bath">米糠酵素風呂</a></li>
+                    <li><a href="#flow">ご利用の流れ</a></li>
+                    <li><a href="#access">アクセス</a></li>
+                    <li><a href="#faq">よくあるご質問</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-booking">
+                <h4>RESERVATION</h4>
+                <p>完全予約制（前日20:00まで）</p>
+                <a href="https://tol-app.jp/s/kogama" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+                    WEB予約（freee予約）
+                </a>
+                <a href="tel:08018773138" class="btn btn-outline-light btn-block">
+                    TEL: 080-1877-3138
+                </a>
+            </div>
         </div>
-        <div class="copyright">
-            &copy; 2026 Private Resort Karaoke & Spa TSUKIKAGE. All Rights Reserved.
+
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 カラオケ・米糠風呂 ナイアス (神様の道具 コガマ). All Rights Reserved.</p>
         </div>
     </footer>
 
-    <script src="app.js"></script>
+    <!-- モバイル固定予約バー -->
+    <div class="mobile-sticky-bar" id="mobile-sticky-bar">
+        <a href="tel:08018773138" class="sticky-btn sticky-tel">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>電話予約</span>
+        </a>
+        <a href="https://tol-app.jp/s/kogama" target="_blank" rel="noopener noreferrer" class="sticky-btn sticky-web">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            <span>WEB予約する</span>
+        </a>
+    </div>
+
+    <!-- 料金ポスター拡大モーダル -->
+    <div class="modal-backdrop" id="poster-modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close-btn" id="close-poster-modal" aria-label="閉じる">&times;</button>
+            <div class="modal-header">
+                <h3>店内に掲示中の公式料金表ポスター</h3>
+                <p>〒059-1741 北海道勇払郡厚真町上厚真101 / TEL: 080-1877-3138</p>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/price_poster.jpg" alt="ナイアス 公式料金表ポスター" class="modal-poster-img">
+            </div>
+            <div class="modal-footer text-center">
+                <a href="https://tol-app.jp/s/kogama" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    この料金でWEB予約する
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./app.js"></script>
 </body>
 </html>
